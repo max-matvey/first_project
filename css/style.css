@@ -73,17 +73,21 @@ h1, h2, h3, h4, h5, h6 {
 .header__search {
   margin: 0 140px 0 100px; }
   .header__search form {
+    display: flex;
     width: 440px;
-    height: 35px;
-    border: 1px solid black; }
-    .header__search form input [type="search"] {
-      border: none;
+    height: 35px; }
+    .header__search form input {
+      border: 1px solid #e5e5e5;
+      border-right: #00aedb;
+      padding-left: 10px;
       width: 70%;
       height: 100%; }
-    .header__search form input [type="submit"] {
-      border: none;
-      width: 29%;
-      height: 100%; }
+    .header__search form button {
+      position: relative;
+      border: 1px solid #00aedb;
+      width: 30%;
+      background-color: #00aedb;
+      color: white; }
 
 .header__social-icons a {
   margin-left: 5px; }
@@ -105,3 +109,5 @@ h1, h2, h3, h4, h5, h6 {
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.947; }
+    .header__nav ul :last-child {
+      width: 100%; }

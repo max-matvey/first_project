@@ -37,23 +37,28 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     }
 
     &__search {
-
         margin: 0 140px 0 100px;
+
         form {
+            display: flex;
             width: 440px;
             height: 35px;
-            border: 1px solid black;
+            
         
-        input [type="search"] {
-            border: none;
+        input {
+            border: 1px solid #e5e5e5 ;
+            border-right: #00aedb;
+            padding-left: 10px;
             width: 70%;
             height: 100%;
         }
 
-        input [type="submit"] {
-            border: none;
-            width: 29%;
-            height: 100%;
+        button {
+            position: relative;
+            border: 1px solid #00aedb ;
+            width: 30%;
+            background-color:#00aedb;
+            color: white;
         }
         }
         
@@ -88,6 +93,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
                 text-transform: uppercase;
                 line-height: 1.947;
                 }
+
+            }
+
+            :last-child {
+                width: 100%;
             }
         }
     }
